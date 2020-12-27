@@ -1,0 +1,625 @@
+[
+  {
+    "key": 2,
+    "id": "CLS",
+    "name": "CLS",
+    "mask": 65535,
+    "pattern": 224,
+    "arguments": []
+  },
+  {
+    "key": 3,
+    "id": "RET",
+    "name": "RET",
+    "mask": 65535,
+    "pattern": 238,
+    "arguments": []
+  },
+  {
+    "key": 4,
+    "id": "JP_ADDR",
+    "name": "JP",
+    "mask": 61440,
+    "pattern": 4096,
+    "arguments": [
+      {
+        "mask": 4095,
+        "shift": 0,
+        "type": "A"
+      }
+    ]
+  },
+  {
+    "key": 5,
+    "id": "CALL_ADDR",
+    "name": "CALL",
+    "mask": 61440,
+    "pattern": 8192,
+    "arguments": [
+      {
+        "mask": 4095,
+        "shift": 0,
+        "type": "A"
+      }
+    ]
+  },
+  {
+    "key": 6,
+    "id": "SE_VX_NN",
+    "name": "SE",
+    "mask": 61440,
+    "pattern": 12288,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 255,
+        "shift": 0,
+        "type": "NN"
+      }
+    ]
+  },
+  {
+    "key": 7,
+    "id": "SNE_VX_NN",
+    "name": "SNE",
+    "mask": 61440,
+    "pattern": 16384,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 255,
+        "shift": 0,
+        "type": "NN"
+      }
+    ]
+  },
+  {
+    "key": 8,
+    "id": "SE_VX_VY",
+    "name": "SE",
+    "mask": 61455,
+    "pattern": 20480,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 240,
+        "shift": 4,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 9,
+    "id": "LD_VX_NN",
+    "name": "LD",
+    "mask": 61440,
+    "pattern": 24576,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 255,
+        "shift": 0,
+        "type": "NN"
+      }
+    ]
+  },
+  {
+    "key": 10,
+    "id": "ADD_VX_NN",
+    "name": "ADD",
+    "mask": 61440,
+    "pattern": 28672,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 255,
+        "shift": 0,
+        "type": "NN"
+      }
+    ]
+  },
+  {
+    "key": 11,
+    "id": "LD_VX_VY",
+    "name": "LD",
+    "mask": 61455,
+    "pattern": 32768,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 240,
+        "shift": 4,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 12,
+    "id": "OR_VX_VY",
+    "name": "OR",
+    "mask": 61455,
+    "pattern": 32769,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 240,
+        "shift": 4,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 13,
+    "id": "AND_VX_VY",
+    "name": "AND",
+    "mask": 61455,
+    "pattern": 32770,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 240,
+        "shift": 4,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 14,
+    "id": "XOR_VX_VY",
+    "name": "XOR",
+    "mask": 61455,
+    "pattern": 32771,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 240,
+        "shift": 4,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 15,
+    "id": "ADD_VX_VY",
+    "name": "ADD",
+    "mask": 61455,
+    "pattern": 32772,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 240,
+        "shift": 4,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 16,
+    "id": "SUB_VX_VY",
+    "name": "SUB",
+    "mask": 61455,
+    "pattern": 32773,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 240,
+        "shift": 4,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 17,
+    "id": "SHR_VX_VY",
+    "name": "SHR",
+    "mask": 61455,
+    "pattern": 32774,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 240,
+        "shift": 4,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 18,
+    "id": "SUBN_VX_VY",
+    "name": "SUBN",
+    "mask": 61455,
+    "pattern": 32775,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 240,
+        "shift": 4,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 19,
+    "id": "SHL_VX_VY",
+    "name": "SHL",
+    "mask": 61455,
+    "pattern": 32782,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 240,
+        "shift": 4,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 20,
+    "id": "SNE_VX_VY",
+    "name": "SNE",
+    "mask": 61455,
+    "pattern": 36864,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 240,
+        "shift": 4,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 21,
+    "id": "LD_I_ADDR",
+    "name": "LD",
+    "mask": 61440,
+    "pattern": 40960,
+    "arguments": [
+      {
+        "mask": 0,
+        "shift": 0,
+        "type": "I"
+      },
+      {
+        "mask": 4095,
+        "shift": 0,
+        "type": "A"
+      }
+    ]
+  },
+  {
+    "key": 22,
+    "id": "JP_V0_ADDR",
+    "name": "JP",
+    "mask": 61440,
+    "pattern": 45056,
+    "arguments": [
+      {
+        "mask": 0,
+        "shift": 0,
+        "type": "V0"
+      },
+      {
+        "mask": 4095,
+        "shift": 0,
+        "type": "A"
+      }
+    ]
+  },
+  {
+    "key": 23,
+    "id": "RND_VX_NN",
+    "name": "RND",
+    "mask": 61440,
+    "pattern": 49152,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 255,
+        "shift": 0,
+        "type": "NN"
+      }
+    ]
+  },
+  {
+    "key": 24,
+    "id": "DRW_VX_VY_N",
+    "name": "DRW",
+    "mask": 61440,
+    "pattern": 53248,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 240,
+        "shift": 4,
+        "type": "R"
+      },
+      {
+        "mask": 15,
+        "shift": 0,
+        "type": "N"
+      }
+    ]
+  },
+  {
+    "key": 25,
+    "id": "SKP_VX",
+    "name": "SKP",
+    "mask": 61695,
+    "pattern": 57502,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 26,
+    "id": "SKNP_VX",
+    "name": "SKNP",
+    "mask": 61695,
+    "pattern": 57505,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 27,
+    "id": "LD_VX_DT",
+    "name": "LD",
+    "mask": 61455,
+    "pattern": 61447,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 0,
+        "shift": 0,
+        "type": "DT"
+      }
+    ]
+  },
+  {
+    "key": 28,
+    "id": "LD_VX_N",
+    "name": "LD",
+    "mask": 61455,
+    "pattern": 61450,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 0,
+        "shift": 0,
+        "type": "K"
+      }
+    ]
+  },
+  {
+    "key": 29,
+    "id": "LD_DT_VX",
+    "name": "LD",
+    "mask": 61695,
+    "pattern": 61461,
+    "arguments": [
+      {
+        "mask": 0,
+        "shift": 0,
+        "type": "DT"
+      },
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 30,
+    "id": "LD_ST_VX",
+    "name": "LD",
+    "mask": 61695,
+    "pattern": 61464,
+    "arguments": [
+      {
+        "mask": 0,
+        "shift": 0,
+        "type": "ST"
+      },
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 31,
+    "id": "ADD_I_VX",
+    "name": "ADD",
+    "mask": 61695,
+    "pattern": 61470,
+    "arguments": [
+      {
+        "mask": 0,
+        "shift": 0,
+        "type": "I"
+      },
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 32,
+    "id": "LD_F_VX",
+    "name": "LD",
+    "mask": 61695,
+    "pattern": 61481,
+    "arguments": [
+      {
+        "mask": 0,
+        "shift": 0,
+        "type": "I"
+      },
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 33,
+    "id": "LD_B_VX",
+    "name": "LD",
+    "mask": 61695,
+    "pattern": 61491,
+    "arguments": [
+      {
+        "mask": 0,
+        "shift": 0,
+        "type": "B"
+      },
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 34,
+    "id": "LD_I_VX",
+    "name": "LD",
+    "mask": 61695,
+    "pattern": 61525,
+    "arguments": [
+      {
+        "mask": 0,
+        "shift": 0,
+        "type": "[I]"
+      },
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      }
+    ]
+  },
+  {
+    "key": 35,
+    "id": "LD_VX_I",
+    "name": "LD",
+    "mask": 61695,
+    "pattern": 61541,
+    "arguments": [
+      {
+        "mask": 3840,
+        "shift": 8,
+        "type": "R"
+      },
+      {
+        "mask": 0,
+        "shift": 0,
+        "type": "[I]"
+      }
+    ]
+  },
+  {
+    "key": 36,
+    "id": "DW",
+    "name": "DW",
+    "mask": 0,
+    "pattern": 0,
+    "arguments": [
+      {
+        "mask": 65535,
+        "shift": 0,
+        "type": "DW"
+      }
+    ]
+  }
+]

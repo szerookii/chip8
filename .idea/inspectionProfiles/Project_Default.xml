@@ -10,6 +10,7 @@
         <function importPath="fmt" name="Print" />
         <function importPath="github.com/nsf/termbox-go" name="Flush" />
         <function importPath="fmt" name="Scan" />
+        <function importPath="encoding/json" name="Unmarshal" />
       </functions>
       <methods>
         <method importPath="hash" receiver="Hash" name="Write" />
