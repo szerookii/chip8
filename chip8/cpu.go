@@ -311,11 +311,25 @@ func (cpu *CPU) Exec(opcode uint16) {
 		break
 
 	case "SKP_VX":
-		// ToDo
+		isKeyPressed := cpu.V[args[0]] == 1
+
+		if isKeyPressed {
+			cpu.PC += 4
+		} else {
+			cpu.PC += 2
+		}
+
 		break
 
 	case "SKNP_VX":
-		// ToDo
+		isKeyPressed := cpu.V[args[0]] == 1
+
+		if !isKeyPressed {
+			cpu.PC += 4
+		} else {
+			cpu.PC += 2
+		}
+
 		break
 
 	case "LD_VX_DT":
@@ -324,7 +338,7 @@ func (cpu *CPU) Exec(opcode uint16) {
 		break
 
 	case "LD_VX_N":
-		// ToDo
+		// ToDo : Wait for key press
 		break
 
 	case "LD_DT_VX":

@@ -1,8 +1,9 @@
 package chip8
 
 import (
-	"github.com/nsf/termbox-go"
 	"log"
+
+	"github.com/nsf/termbox-go"
 )
 
 type Pixel struct {
@@ -61,7 +62,7 @@ func (d *Display) Clear() {
 func (d *Display) Update() {
 	for _, pixel := range d.pixels {
 		if pixel.Color == 1 {
-			termbox.SetCell(pixel.X, pixel.Y, ' ', termbox.ColorWhite, termbox.ColorWhite)
+			termbox.SetCell(pixel.X, pixel.Y, ' ', termbox.ColorBlack, termbox.ColorWhite)
 		} else {
 			termbox.SetCell(pixel.X, pixel.Y, ' ', termbox.ColorBlack, termbox.ColorBlack)
 		}
